@@ -3,8 +3,8 @@ import streamlit as st
 #### Faction rules ####
 with st.sidebar.expander('FACTION RULES'):
     st.title('FORWARD SCOUTING')
-    redeploy = st.checkbox('Redeploy (1)')
-    reposition = st.checkbox('Reposition (2)')
+    redeploy = st.checkbox('Redeploy (1)', help='Change the set up of one third of your operatives (rounding up).')
+    reposition = st.checkbox('Reposition (2)',)
     trip_alarm = st.checkbox('Trip Alarm (2)')
     booby_trap = st.checkbox('Booby Trap (1)')
     diversion = st.checkbox('Diversion (1)')
@@ -167,4 +167,4 @@ change its order.
 #### UNITS ####
 with st.expander('DATACARDS'):
     with st.container(border=True):
-        st.write('Sergeant bob')
+        st.text_area('Sergeant bob')
